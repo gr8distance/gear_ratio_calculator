@@ -59,5 +59,5 @@ defmodule App.Calculator do
     |> YamlElixir.read_from_file!(atoms: true)
   end
 
-  def yaml_path, do: "priv/components/gear.yaml"
+  def yaml_path, do: System.get_env("GEAR_YAML_PATH", "priv/components/gear.yaml")
 end
