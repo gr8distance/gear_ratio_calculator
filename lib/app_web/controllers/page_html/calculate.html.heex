@@ -16,7 +16,7 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-2">
+  <div class="grid sm:grid-cols-1 md:grid-cols-2">
     <%= Enum.map(@speeds, fn {chainring, speeds} -> %>
     <div class="data-table mx-5 col-span-1"  id={"data-source-#{chainring}"}>
       <h2>
